@@ -3,7 +3,7 @@ Overview
 A resilient email-sending service built in JavaScript, using mock providers to simulate email sending. This project demonstrates key features like retries, fallback, idempotency, rate limiting, and status tracking, along with bonus features like a circuit breaker, logging, and a queue system. It also includes an Express API for sending emails.
 Setup
 
-Clone the repository.
+Clone the repository: git clone https://github.com/rsingh241020/email-service.git.
 Install dependencies: npm install.
 Run the API server: npm start.
 Run the demo (in a separate terminal): npm run demo.
@@ -24,13 +24,13 @@ The project includes an Express API with the following endpoints:
 Deployed API
 The API is deployed on Render and can be accessed at:
 
-Base URL: https://email-service-js.onrender.com
+Base URL: https://email-service-1gu2.onrender.com
 
 POST /send-email
 
 Description: Queues an email to be sent.
 Request Body:{
-  "to": "rsingh241020@gmail.com",
+  "to": "test@example.com",
   "subject": "Test Email",
   "body": "Hello, World!"
 }
@@ -42,7 +42,7 @@ Response (202 Accepted):{
 }
 
 
-Example:curl -X POST https://email-service-js.onrender.com/send-email -H "Content-Type: application/json" -d '{"to":"test@example.com","subject":"Test Email","body":"Hello!"}'
+Example:curl -X POST https://email-service-1gu2.onrender.com/send-email -H "Content-Type: application/json" -d '{"to":"test@example.com","subject":"Test Email","body":"Hello!"}'
 
 
 
@@ -54,7 +54,7 @@ Response (200 OK):{
   "status": "SENT",
   "provider": "PrimaryProvider",
   "error": null,
-  "timestamp": "2025-06-07T07:10:07.023Z"
+  "timestamp": "2025-06-07T14:35:07.023Z"
 }
 
 
