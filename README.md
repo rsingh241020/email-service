@@ -30,7 +30,7 @@ POST /send-email
 
 Description: Queues an email to be sent.
 Request Body:{
-  "to": "test@example.com",
+  "to": "rsingh241020@gmail.com",
   "subject": "Test Email",
   "body": "Hello, World!"
 }
@@ -58,7 +58,7 @@ Response (200 OK):{
 }
 
 
-Example:curl https://email-service-js.onrender.com/status/email-123456789
+Example:curl https://email-service-1gu2.onrender.com/status/email-123456789
 
 
 
